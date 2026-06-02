@@ -14,16 +14,13 @@
 <div align="center">
 
 
-
-
-![ChessForge Logo](assets/chessforge-logo.png)
-
-
 <img src="assets/demo.gif" alt="ChessForge gameplay demo" width="700"/>
 
 <br/>
 
 **Dependency-free chess engine built from scratch in Python**
+
+👉 [**Play against the engine on Lichess! (@ChessForge_Bot)**](https://lichess.org/@/ChessForge_Bot)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-00d4aa?style=flat-square)]()
