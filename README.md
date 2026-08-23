@@ -27,12 +27,6 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
 [![Stars](https://img.shields.io/github/stars/ibnshafi/chessforge?style=flat-square&color=yellow)](https://github.com/ibnshafi/chessforge/stargazers)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square)]()
-<!-- ============================================================
-     ASSET 3: ADDITIONAL BADGES (no image file needed)
-     Add these badges right here alongside the existing ones.
-     They pull live data from shields.io automatically — no assets required.
-     Just paste these lines:
-     ============================================================ -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![GitHub issues](https://img.shields.io/github/issues/ibnshafi/chessforge?style=flat-square)](https://github.com/ibnshafi/chessforge/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/ibnshafi/chessforge?style=flat-square)](https://github.com/ibnshafi/chessforge/commits/main)
@@ -65,17 +59,6 @@ Legal Move Gen  →  Zobrist Hashing  →  PVS Alpha-Beta  →  Quiescence Searc
 
 ## ✨ Features
 
-<!-- ============================================================
-     ASSET 4: FEATURES SCREENSHOT
-     File: assets/features-board.png
-     What it is: A clean terminal screenshot (~700×400px) showing
-     the board display with some pieces, ideally mid-game with
-     a compelling position. Take a screenshot of your own CLI
-     (`python -m chessforge.cli --mode ai-ai`) and crop tightly.
-     Place it RIGHT HERE, floated right so it sits beside the table.
-     Use this HTML to float it:
-     <img align="right" src="assets/features-board.png" width="320" alt="CLI board"/>
-     ============================================================ -->
 <img align="right" src="assets/features-board.png" width="320" alt="ChessForge CLI board display"/>
 
 | Module | What it does |
@@ -129,18 +112,7 @@ python examples/ai_vs_ai.py --depth 2 --time 0.5 --max-plies 40
 
 ### UCI (plug into any chess GUI)
 
-<!-- ============================================================
-     ASSET 5: UCI GUI SCREENSHOT
-     File: assets/uci-arena.png
-     What it is: A screenshot (~700×400px) of ChessForge loaded
-     inside Arena or CuteChess GUI — shows it works as a real UCI
-     engine. Even a small annotated screenshot here reassures users
-     the UCI integration genuinely works. If you don't have Arena,
-     a screenshot of the terminal UCI handshake is fine too.
-     Place it below this comment, full-width:
-     <img src="assets/uci-arena.png" alt="ChessForge in Arena GUI" width="680"/>
-     ============================================================ -->
-<img src="assets/uci-arena.png" alt="ChessForge running inside Arena chess GUI" width="680"/>
+<img src="assets/uci-protocol.png" alt="ChessForge UCI handshake and search trace in a terminal" width="680"/>
 
 ```bash
 python -m chessforge.uci
@@ -176,19 +148,6 @@ quit        exit
 
 ## 🏗️ Architecture
 
-<!-- ============================================================
-     ASSET 6: ARCHITECTURE DIAGRAM IMAGE
-     File: assets/architecture.png
-     What it is: A clean diagram (~800×500px) visually showing
-     the pipeline: Move Gen → Zobrist → Search → Eval, with
-     boxes and arrows. You can generate this for free at:
-       - https://excalidraw.com (hand-drawn look, very popular)
-       - https://app.diagrams.net (draw.io, more formal)
-       - https://mermaid.live (auto-render from code — paste the
-         pipeline text below and export as PNG)
-     Export as PNG and save to assets/architecture.png.
-     A dark-background version matches the repo's terminal aesthetic.
-     ============================================================ -->
 <div align="center">
   <img src="assets/architecture.png" alt="ChessForge architecture diagram" width="750"/>
 </div>
@@ -265,20 +224,6 @@ Iterative Deepening
        └─ Quiescence Search
 ```
 
-<!-- ============================================================
-     ASSET 7: SEARCH TREE VISUALIZATION GIF or PNG
-     File: assets/search-tree.gif (or .png)
-     What it is: An animated GIF (~600×350px) showing a simplified
-     alpha-beta tree being pruned — nodes lighting up, pruned
-     branches going grey. This is optional but very impressive.
-     Simpler alternative: a static PNG screenshot of the engine's
-     PV output (`python -m chessforge.benchmark`) showing the
-     search stats (nodes, depth, time). Much easier to produce.
-     Place it here, centered:
-     <div align="center">
-       <img src="assets/search-tree.png" alt="PVS search output" width="600"/>
-     </div>
-     ============================================================ -->
 <div align="center">
   <img src="assets/search-tree.png" alt="PVS search instrumentation output" width="600"/>
 </div>
@@ -300,15 +245,6 @@ Material + PST
   + Endgame: opposition, fortress scaling
 ```
 
-<!-- ============================================================
-     ASSET 8: EVALUATION HEATMAP SCREENSHOT
-     File: assets/eval-heatmap.png
-     What it is: A screenshot (~500×500px) of the evaluation
-     heatmap output from `visualization.py`. This already exists
-     in your codebase — just run it on an interesting position
-     and screenshot the result. It's a natural fit here since
-     you're describing eval terms.
-     ============================================================ -->
 <div align="center">
   <img src="assets/eval-heatmap.png" alt="Evaluation heatmap visualization" width="480"/>
   <br/>
@@ -323,15 +259,6 @@ Material + PST
 python -m unittest discover -s tests -v
 ```
 
-<!-- ============================================================
-     ASSET 9: TEST OUTPUT SCREENSHOT
-     File: assets/tests-passing.png
-     What it is: A terminal screenshot (~700×300px) showing the
-     test suite running and passing — the green dots/OKs scrolling
-     by. Gives instant credibility. Run:
-       python -m unittest discover -s tests -v 2>&1 | head -60
-     Screenshot that. Much more convincing than just a badge.
-     ============================================================ -->
 <img src="assets/tests-passing.png" alt="Test suite output showing all tests passing" width="680"/>
 
 The test suite validates move generation correctness against known node counts:
@@ -365,18 +292,6 @@ python -m chessforge.benchmark --repeats 1 --eval-iterations 20
 python -m chessforge.research --depths 1,2 --max-plies 8
 ```
 
-<!-- ============================================================
-     ASSET 10: BENCHMARK / ELO CHART
-     File: assets/benchmark-chart.png
-     What it is: A bar chart or line chart (~700×350px) showing
-     benchmark results — nodes/second across depths, or Elo
-     estimates from the research platform across engine versions.
-     Generate it by running:
-       python -m chessforge.benchmark --repeats 3
-     and plotting the output with matplotlib (one-off script).
-     Export as PNG. Even a simple chart here makes the project
-     look serious and data-driven.
-     ============================================================ -->
 <div align="center">
   <img src="assets/benchmark-chart.png" alt="Search benchmark: nodes per second by depth" width="680"/>
   <br/>
@@ -452,16 +367,6 @@ MIT — do whatever you want, just keep the attribution.
 ---
 
 <div align="center">
-
-<!-- ============================================================
-     ASSET 11: CLOSING BANNER IMAGE (optional but polished)
-     File: assets/footer-banner.png
-     What it is: A minimal dark-background banner (~800×120px)
-     with just a chess board pattern or knight silhouette and
-     the text "ChessForge". Create in Canva (free) or Figma in
-     10 minutes. Gives the README a finished, professional look.
-     ============================================================ -->
-<img src="assets/footer-banner.png" alt="ChessForge" width="600"/>
 
 **If this saved you from reading the FIDE rulebook, consider leaving a ⭐**
 
