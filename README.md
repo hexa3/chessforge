@@ -24,12 +24,10 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-00d4aa?style=flat-square)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)](CONTRIBUTING.md)
-[![Stars](https://img.shields.io/github/stars/ibnshafi/chessforge?style=flat-square&color=yellow)](https://github.com/ibnshafi/chessforge/stargazers)
 [![Tests](https://img.shields.io/badge/tests-passing-brightgreen?style=flat-square)]()
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/ibnshafi/chessforge?style=flat-square)](https://github.com/ibnshafi/chessforge/issues)
-[![Last Commit](https://img.shields.io/github/last-commit/ibnshafi/chessforge?style=flat-square)](https://github.com/ibnshafi/chessforge/commits/main)
+[![GitHub issues](https://img.shields.io/github/issues/hexa3/chessforge?style=flat-square)](https://github.com/hexa3/chessforge/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/hexa3/chessforge?style=flat-square)](https://github.com/hexa3/chessforge/commits/main)
 
 [**Quick Start**](#-quick-start) · [**Features**](#-features) · [**Architecture**](#-architecture) · [**Search**](#-search--evaluation) · [**Contribute**](#-contributing)
 
@@ -42,8 +40,6 @@
 ChessForge is a **complete, dependency-free chess engine** — no Stockfish, no python-chess, no shortcuts. Every rule, every search algorithm, every evaluation term is implemented from scratch in pure Python.
 
 Full FIDE legality. A real search. A real evaluator. A UCI interface. And a research platform for ML experiments and engine ablations.
-
-Pull it, play it, break it. Then send a PR.
 
 ```
 Legal Move Gen  →  Zobrist Hashing  →  PVS Alpha-Beta  →  Quiescence Search
@@ -87,7 +83,7 @@ Legal Move Gen  →  Zobrist Hashing  →  PVS Alpha-Beta  →  Quiescence Searc
 
 ```bash
 # 1. Clone
-git clone https://github.com/ibnshafi/chessforge.git
+git clone https://github.com/hexa3/chessforge.git
 cd chessforge
 
 # 2. Play immediately — no dependencies to install
@@ -354,7 +350,7 @@ Good places to start:
 - Pick an **Open for PRs** item above
 - Improve evaluation term weights via the research platform
 - Add perft positions to `tests/test_perft.py`
-- Check [open issues](https://github.com/ibnshafi/chessforge/issues) for items tagged `good first issue`
+- Check [open issues](https://github.com/hexa3/chessforge/issues) for items tagged `good first issue`
 
 Please keep new code consistent with the existing style — pure functions where possible, no external dependencies, and a perft or unit test for anything touching move generation or rules.
 
@@ -363,13 +359,3 @@ Please keep new code consistent with the existing style — pure functions where
 ## 📄 License
 
 MIT — do whatever you want, just keep the attribution.
-
----
-
-<div align="center">
-
-**If this saved you from reading the FIDE rulebook, consider leaving a ⭐**
-
-Built with ♥ — no libraries harmed in the making of this engine
-
-</div>
