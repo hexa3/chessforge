@@ -359,3 +359,7 @@ Please keep new code consistent with the existing style — pure functions where
 ## 📄 License
 
 MIT — do whatever you want, just keep the attribution.
+
+---
+
+<p align="center">Built by <a href="https://sheheryar.xyz">Sheheryar</a> · <a href="https://github.com/hexa3">github.com/hexa3</a></p>
